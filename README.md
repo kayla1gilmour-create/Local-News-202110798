@@ -1,1 +1,1 @@
-<p> Local News for Glasgow by student 202110798</p>
+<p> Local News for Glasgow made using HTML.</p>
