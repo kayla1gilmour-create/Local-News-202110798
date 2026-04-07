@@ -5,15 +5,11 @@
 <style>
 
 body {
-  background-color: #2F3E4D;
+  background-color: #E6EEF5;
   margin: 0;
   font-family: arial;
-
-  border-left: 180px solid #E6EEF5;
-  border-right: 180px solid #E6EEF5;
-
- min-height: 100vh;
-	padding: 40px;
+  min-height: 100vh;
+  padding: 40px;
 }
 
   h1 {
@@ -62,14 +58,13 @@ body {
 
 
 .chart-container {
-  max-width: 800px;  
+  max-width: 100%;   
   margin: 40px auto;
 }
 
 .chart-container iframe {
   width: 100%;
-  height: 600px;
-  border: none;
+  height: 650px; 
 }
 	
 .articles-container {
@@ -97,12 +92,22 @@ body {
 	margin-bottom: 20px
   display: block;
 }
+
+.page-container {
+  max-width: 1100px; 
+  margin: 0 auto;   
+	background-color: #2F3E4D;
+  	padding: 40px;
+}
 	
 </style>
 </head>
 
 
 <body>
+
+<div class="page-container">
+	
 <h1>Local Glasgow News</h1>
 	
 <p class="subtitle">What's going on in Glasgow?</p>
@@ -169,6 +174,8 @@ body {
     <noscript>
         <img src="https://public.flourish.studio/visualisation/28366273/thumbnail" width="100%" alt="visualization" />
     </noscript>
+</div>
+
 </div>
 	
 </body>
