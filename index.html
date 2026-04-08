@@ -257,6 +257,171 @@ a:hover {
 </div>
 	
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: #E6EEF5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #2F3E4D;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* --- Headings --- */
+h1 {
+  font-size: 38px;
+  font-family: "Times New Roman", serif;
+  color: #FFFFFF;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+h2, h3 {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0 0 20px 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: #D1DCE5;
+  margin: 10px 0 40px 0;
+  font-size: 22px;
+}
+
+	
+p {
+  color: #D1DCE5;
+  line-height: 1.6;
+}
+
+a:link {
+  color: #F0472D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF8364;
+  text-decoration: underline;
+}
+
+/* --- Articles Layout --- */
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article {
+  background-color: #3B4B5C;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+/* --- Charts --- */
+.chart-container, .flourish-embed {
+  width: 100%;
+  max-width: 600px;
+  height: 0;
+  position: relative;
+  padding-bottom: 66.66%; /* 600x400 aspect ratio */
+  margin: 30px auto;
+}
+
+.chart-container iframe, .flourish-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-container">
+
+<h1>Local Glasgow News</h1>
+<p class="subtitle">What's going on in Glasgow?</p>
+
+<div class="articles-container">
+
+
+<div class="article">
+  <h2>How Sustainable is Glasgow 2026? An Evaluation of the Commonwealth Games’ Eco Goals</h2>
+  <p>Commonwealth Games Scotland has selected four of Glasgow’s most coveted venues ...</p>
+
+  <div class="chart-container">
+    <iframe src="https://uploads.knightlab.com/storymapjs/f2bf65f46be26721571985fac0ee607c/glasgow-sport-venues/index.html" frameborder="0"></iframe>
+  </div>
+
+  <p>Low Emission Zones (LEZ) have made an undeniable impact ...</p>
+
+  <div class="chart-container">
+    <iframe title="Carbon Emissions in Glasgow 2015-2021" src="https://datawrapper.dwcdn.net/qFfQD/1/" scrolling="no"></iframe>
+  </div>
+
+  <p>Renovations of Scotstoun Stadium may complicate Glasgow’s ecological ...</p>
+</div>
+
+
+<div class="article">
+  <h3>The Rise of Walking and Fall of Cycling in Glasgow</h3>
+  <p>The volume of cyclists is falling in Glasgow as the amount of walking rises ...</p>
+
+  <div class="flourish-embed" data-src="visualisation/28335550">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/28335550/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
+    </noscript>
+  </div>
+
+  <p>Despite the impacts of these initiatives, in 2025, 58% of people with disabilities ...</p>
+
+  <div class="flourish-embed" data-src="visualisation/28405772">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/28405772/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
+    </noscript>
+  </div>
+
+  <p>While people don’t always feel safe walking in the city ...</p>
+
+  <div class="flourish-embed" data-src="visualisation/28366273">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <noscript>
+      <img src="https://public.flourish.studio/visualisation/28366273/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
+    </noscript>
+  </div>
+
+  <p>Cycling and walking play vital roles in Glasgow’s health and wellbeing ...</p>
+</div>
+
+</div> 
+</div>
+
+</body>
 </html>
 
 
