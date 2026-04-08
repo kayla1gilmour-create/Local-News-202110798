@@ -47,11 +47,19 @@ p {
   color: #D1DCE5;
 }
 
+p {
+  line-height: 1.6;
+}
+
 a:link {
   color: #F0472D;
   text-decoration: none;
 }
 
+a:hover {
+  color: #FF8364; 
+  text-decoration: underline;
+}
 
 .articles-container {
   display: flex;
@@ -70,6 +78,10 @@ a:link {
   box-sizing: border-box;
 }
 
+.article {
+  flex: 1 1 300px; /* adjusts to screen width */
+  max-width: 600px; /* caps width for readability */
+}
 
 .chart-container {
   max-width: 100%;
