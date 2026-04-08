@@ -74,8 +74,10 @@ a:hover {
   background-color: #3B4B5C;
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 500px;
+  flex: 1 1 100%;  
+  max-width: 600px; 
   box-sizing: border-box;
+  margin: 10px;
 }
 
 .article {
@@ -83,6 +85,17 @@ a:hover {
   max-width: 600px; 
 }
 
+.article .side-chart {
+  float: right;
+  width: 48%;
+  margin-left: 20px;
+}
+
+.article .side-chart iframe {
+  width: 100%;
+  height: auto;
+}
+	
 .chart-container {
   max-width: 100%;
   margin: 40px auto 20px auto;
@@ -90,26 +103,30 @@ a:hover {
 
 .chart-container iframe {
   width: 100%;
-  height: 650px;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
   border: none;
   display: block;
-  margin: 0 auto;
+  position: relative;
 }
-
 
 .flourish-embed {
   width: 100% !important;
   max-width: 600px;
-  height: 400px !important;
+  height: 0;
+  padding-bottom: 66.66%;
+  position: relative;
   margin: 20px auto;
-  display: block;
 }
 
 .flourish-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100% !important;
   height: 100% !important;
   border: none;
-  display: block;
 }
 	
 </style>
@@ -178,6 +195,12 @@ a:hover {
 		<p>The volume of cyclists is falling in Glasgow as the amount of walking rises, Glasgow’s Walking and Cycling Index finds.</p>
 
 		<p>The Index shows that walking and wheeling remain the most common ways to commute in the city. In 2025, 93% of people said they walk or wheel, and 57% walked or wheeled at least five times each week. This value has risen by 1% since 2023 and 3% since 2021. The most common motive to walk has been for ‘destination.’ That includes shopping, commuting to a place of employment and going to school.  Cycling saw the opposite effect, with only 5% of Glaswegians cycling at least five times each week in 2025, 2% less than in 2023. </p>
+
+	<div class="side-chart">
+  <div class="flourish-embed" data-src="visualisation/28405772">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+  </div>
+</div>
 
 		<p>Cycling Scotland’s website shows the volume of bikes on Glasgow’s cycling routes in 2025. The routes that saw the most cyclists include South City Way beside Govan, and East City Way by Daldowie Road. East City Way will soon see the addition of new signals, footways and cyclist detection technology so people can safely walk and cycle in the city. The findings of Cycling Scotland’s study can be seen below:</p>
 	
