@@ -4,7 +4,6 @@
 <head>
 <style>
 
-
 body {
   background-color: #E6EEF5;
   margin: 0;
@@ -13,54 +12,61 @@ body {
   padding: 40px;
 }
 
-.page-container {
-  max-width: 1100px; 
-  margin: 0 auto;   
-  background-color: #2F3E4D;
-  padding: 40px;
-}
+  h1 {
+    font-size: 38px;
+	font-family: times new roman;
+    color: #FFFFFF;
+    padding: 0px;            
+    margin: 0; 
+	margin-bottom: 15px;
+	text-align: center;
+  }
 
+  h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0px;            
+    margin: 0;   
+	margin-bottom: 20px;
+  }
 
-h1 {
-  font-size: 38px;
-  font-family: times new roman;
-  color: #FFFFFF;
-  margin: 0 0 15px 0; 
-  text-align: center;
-}
-
-h2, h3 {
-  font-size: 18px;
-  color: #FFFFFF;
-  margin: 0 0 20px 0; 
-}
+  h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0px;            
+    margin: 0;  
+	margin-bottom: 20px;
+  }
 
 .subtitle {
   text-align: center;
   color: #D1DCE5;
-  margin: 10px 0 40px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
   font-size: 22px;
 }
 
-
-p {
+	p {
   color: #D1DCE5;
 }
 
-p {
-  line-height: 1.6;
+	a:link {
+ 	 color: #F0472D;
+ 	 background-color: transparent;
+  	text-decoration: none;
 }
 
-a:link {
-  color: #F0472D;
-  text-decoration: none;
+
+.chart-container {
+  max-width: 100%;   
+  margin: 40px auto;
 }
 
-a:hover {
-  color: #FF8364; 
-  text-decoration: underline;
+.chart-container iframe {
+  width: 100%;
+  height: 650px; 
 }
-
+	
 .articles-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,59 +80,24 @@ a:hover {
   background-color: #3B4B5C;
   padding: 20px;
   border-radius: 8px;
-  flex: 1 1 100%;  
-  max-width: 600px; 
+  flex: 1 1 500px;   
   box-sizing: border-box;
-  margin: 10px;
-}
-
-.article {
-  flex: 1 1 300px; 
-  max-width: 600px; 
-}
-
-.article .side-chart {
-  float: right;
-  width: 48%;
-  margin-left: 20px;
-}
-
-.article .side-chart iframe {
-  width: 100%;
-  height: auto;
-}
-	
-.chart-container {
-  max-width: 100%;
-  margin: 40px auto 20px auto;
-}
-
-.chart-container iframe {
-  width: 100%;
-  max-width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; 
-  border: none;
-  display: block;
-  position: relative;
 }
 
 .flourish-embed {
-  width: 100% !important;
-  max-width: 600px;
-  height: 0;
-  padding-bottom: 66.66%;
-  position: relative;
-  margin: 20px auto;
+  width: 100% !important;       
+  max-width: 600px;             
+  height: 400px !important;     
+	margin: 40px auto;    
+	margin-bottom: 20px
+  display: block;
 }
 
-.flourish-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  border: none;
+.page-container {
+  max-width: 1100px; 
+  margin: 0 auto;   
+	background-color: #2F3E4D;
+  	padding: 40px;
 }
 	
 </style>
@@ -148,12 +119,12 @@ a:hover {
 
 	<p>Commonwealth Games Scotland has selected four of Glasgow’s most coveted venues to host the events of the Commonwealth Games, but how do they align with the city’s ecological aims?</p>
 
-	<p>For the second time since 2014, the Commonwealth Games will take place in Glasgow. The Glasgow 2026 Games has scaled back the events to avoid heavy public spending, and plans to use innovative means to make these Games not only economically sustainable, but also climate-conscious. To do this, they have implemented an eight-mile rule that situates the Games’ venues within a set distance of each other. </p>
+	<p>For the second time since 2014, the Commonwealth Games will take place in Glasgow. The Glasgow 2026 Games has scaled back the events to avoid heavy public spending, and plans to use innovative means to make these Games not only economically sustainable, but also climate-conscious.</p>
 
-	<p>The Games take place in only four of the city’s venues – Scotstoun Stadium, Sir Chris Hoy Velodrome, Tollcross Swimming Pool and the Scottish Events Campus (SEC). Between the venues, the Games will host ten events such as basketball, athletics and cycling. The Glasgow 2026 Games website says that the public will be able to access all venues by train to minimise greenhouse gas emissions in light of the city’s goal to become net zero by 2030. The locations of these venues will also facilitate an equitable transport system, as it will allow those who don’t drive to easily access the Games. </p>
+	<p>The Games take place in only four of the city’s venues – Scotstoun Stadium, Sir Chris Hoy Velodrome, Tollcross Swimming Pool and the Scottish Events Campus (SEC). Between the venues, the Games will host ten events such as basketball, athletics and cycling. The Glasgow 2026 Games website says that the public will be able to access all venues by train to minimise greenhouse gas emissions in light of the city’s goal to become net zero by 2030.</p>
 
 	<p>The map below situates the venues for the Glasgow Commonwealth Games venues, as well as some nearby train stations.</p>
-	
+
 	<div class="chart-container">
     <iframe 
       src="https://uploads.knightlab.com/storymapjs/f2bf65f46be26721571985fac0ee607c/glasgow-sport-venues/index.html" 
@@ -162,8 +133,6 @@ a:hover {
   	</div>
 
 	<p>Glasgow became one of the leading cities in eco-innovation following the events of COP26 in 2021. The climate convention had two main outcomes – the Glasgow Climate Pact and the Paris Rulebook. The Pact focusses on the limitation of greenhouse gas emissions, while the Rulebook wants consistency and honesty in accounts about the emissions. In 2026, the city places amongst the top five in the Global Sustainability Destination (GDS) Index. These developments make Scotland’s emission goals achievable by 2045, the Climate Change Committee’s most recent study shows.</p>
-
-	<p>Low Emission Zones (LEZ) have made an undeniable impact on air pollution in the city. Levels of greenhouse gas emissions have fallen by 34% within Glasgow’s Low Emission Zone in the city centre. Not only that, but outside of the zone, emissions have fallen by 22%. Despite this, scientific findings indicate that Glasgow can only lessen emissions by 60% if backed by £23.5bn of investment. The COVID-19 pandemic saw the lowest volume of greenhouse gas emissions in existing data, but since then, the volume has steadily risen. This can be seen in the following chart:  </p>
 	
 	<div class="chart-container">
   <iframe title="Carbon Emissions in Glasgow 2015-2021"
@@ -174,35 +143,17 @@ a:hover {
     height="396">
   </iframe>
  	</div>
-
-<p>This is mostly the consequence of transport use, Transport Scotland says. In 2023, transport accounted for 33% of greenhouse gas emissions in the country. Car usage fell steeply due to the onset of the COVID-19 pandemic but has since risen sharply. Consequently, the Glasgow 2026 Games aim to tackle this by adopting the eight-mile rule for its venues. </p>
-
-<p>Renovations of Scotstoun Stadium may complicate Glasgow’s ecological and sustainable aims. The venue will host the Games’ athletic events, such as pole vault, shot put and long jump. To accommodate these events, the stadium will receive a new ‘world class’ 400m track. The demolition of Scotstoun Stadium may release toxic emissions into the air, impacting local air quality. Demolition can cause dust disposition and visible dust plumes, says London City Hall.  </p>
-
-<p>Despite this, Commonwealth Games Scotland believe the benefits to the public will outweigh ecological costs. They vow that the new stadium will be given to the public after the events, allowing the city access to another ‘world class facility.’  </p>
-
-<p>The Chief Executive of Glasgow 2026, Phil Batty, said: ‘We can’t wait to see Scotstoun Stadium come alive in 2026 and the brilliant sporting moments that will take place in this venue.’</p>
-
-<p>The SEC shows how the Games plan to use existing sites to achieve Glasgow’s sustainable goals. The venue plays an essential role in the sustainability of the Glasgow 2026 Games, and aims to meet goals that will reduce the Games’ greenhouse gas emissions. The venue will focus on waste reduction by minimising single-use plastics and expanding recycling facilities.  </p>
-
-<p>Glasgow’s ambitions to eliminate greenhouse gas emissions can be seen in the eight-mile venue rule and waste reduction goals, yet renovations at Scotstoun Stadium complicate these aims. </p>
-</div>
+ 	 </div>
 
 <div class="article">
 	  
 	<h3>The Rise of Walking and Fall of Cycling in Glasgow</h3>
 
-		<p>The volume of cyclists is falling in Glasgow as the amount of walking rises, Glasgow’s Walking and Cycling Index finds.</p>
+		<p>The latest findings by Glasgow City Council have indicated changes in how Glaswegian people commute, as while the quantity of people who walk in the city continues to rise, and the amount of cyclists decline.</p>
 
-		<p>The Index shows that walking and wheeling remain the most common ways to commute in the city. In 2025, 93% of people said they walk or wheel, and 57% walked or wheeled at least five times each week. This value has risen by 1% since 2023 and 3% since 2021. The most common motive to walk has been for ‘destination.’ That includes shopping, commuting to a place of employment and going to school.  Cycling saw the opposite effect, with only 5% of Glaswegians cycling at least five times each week in 2025, 2% less than in 2023. </p>
+		<p>The Walking and Cycling Index by Glasgow City Council has found that walking and wheeling remain the most common ways to commute in Glasgow. In 2025, 57% of Glaswegians walked at least five times per week, an increase of 1% since 2023 and 3% since 2021. The most common motive to walk has been for ‘destination.’ That includes shopping, commuting to a place of employment and going to school. Cycling has seen the opposite effect, as only 5% of people in Glasgow cycled at least five times per week in 2025, 2% less than in 2023.</p>
 
-	<div class="side-chart">
-  <div class="flourish-embed" data-src="visualisation/28405772">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-  </div>
-</div>
-
-		<p>Cycling Scotland’s website shows the volume of bikes on Glasgow’s cycling routes in 2025. The routes that saw the most cyclists include South City Way beside Govan, and East City Way by Daldowie Road. East City Way will soon see the addition of new signals, footways and cyclist detection technology so people can safely walk and cycle in the city. The findings of Cycling Scotland’s study can be seen below:</p>
+		<p>In 2025, Cycling Scotland spent two days counting the people who walked or cycled on cycling routes in the city. The findings of this data for some of the cycling routes can be seen below:
 	
   <div class="flourish-embed flourish-chart" 
        data-src="visualisation/28335550" 
@@ -214,27 +165,10 @@ a:hover {
     </noscript>
   </div>
 
-		<p>Glasgow City Council continues to advocate for walking by implementing schemes that intend to make walking and wheeling active, safe and inclusive in the city. On top of this, May signals ‘National Walking Month,’ that dedicates 31 days to the ‘power of walking.’ This initiative, alongside the Glasgow Kiltwalk and the Glasgow Walking App signify some of the city’s attempts to advance walking in the city.  </p>
+		<p>Glasgow City Council continues to advocate for walking by implementing schemes like Places for Everyone that intends to make walking and wheeling active, safe and inclusive in the city. The scheme has been founded alongside local universities and colleges, and should allow students to move about easily in the city. On top of this, May signals ‘National Walking Month,’ that dedicates 31 days to the ‘power of walking.’ This initiative, alongside the Glasgow Kiltwalk and the Glasgow Walking App signify some of the city’s attempts to advance walking in the city.</p>
 
-		<p>Despite the impacts of these initiatives, in 2025, 58% of people with disabilities felt unsafe walking and wheeling locally, as the quality of pavements made it difficult to navigate the city. The Avenues initiative has been implemented to handle these accessibility issues. The scheme involves building inclusive public spaces, including walking and cycling routes. The pilot for the scheme was Sauchiehall Avenue, that has gained enhanced, widened pavements, cycling space and intelligent lighting. The changes made to the space can be seen in the following: </p>
+		<p>Despite the impacts of these initiatives, in 2025, 58% of disabled people said they did not feel safe walking or wheeling locally. This value has risen by 2% since 2023. Disabled people face higher levels of abuse in public than non-disabled people that may lead to feelings of being unsafe. People who have disabilities also find the city difficult to navigate due to the poor quality of pavements. A new scheme that involves implementing changes to locations in the city aims to handle these accessibility issues. The Avenues scheme should make the city safer to navigate by building inclusive public spaces, including walking and cycling routes. The pilot for the scheme was the now completed Sauchiehall Avenue, that has gained enhanced, widened pavements, cycling space and intelligent lighting. The changes made to the space can be seen in the following:</p>
 
-<div class="flourish-embed flourish-chart" 
-     data-src="visualisation/28405772" 
-     style="width: 100%; max-width: 600px; height: 400px; margin: 20px auto; display: block;">
-  <script src="https://public.flourish.studio/resources/embed.js"></script>
-  <noscript>
-    <img src="https://public.flourish.studio/visualisation/28405772/thumbnail" 
-         width="100%" 
-         style="max-width: 600px;" 
-         height="400" 
-         alt="visualization" />
-  </noscript>
-</div>
-
-<p>While people don’t always feel safe walking in the city, walking is believed to be significantly safer than cycling. The Walking and Cycling Index says cycling is believed to be one of the least safe ways to commute, as only 45% of people feel safe cycling locally – 25% less than walking. In 2018, ‘Bike Life,’ based on the Copenhagen Bicycle Account, compiled cycling statistics in Glasgow to assess city cycling development, the impact of cycling and new initiatives. While Glasgow has 182 miles of cycle routes, Bike Life finds that most remain unknown to the public.  </p>
-
-<p>Nonetheless, Cycling Scotland’s findings point to a positive outlook for cycling in the city. They show the places that see the most and the least cyclists at all times of day, and have found that cycling peaks at weekday commuting times. The division of cycling and walking at these times can be seen below.   </p>
-	
 	<div class="flourish-embed flourish-chart" data-src="visualisation/28366273" style="width: 100%; height: 400px; margin: 0 auto;">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript>
@@ -242,188 +176,10 @@ a:hover {
     </noscript>
 </div>
 
-<p>Glasgow continues to motivate people to cycle in the city. The Cycle Hire Scheme that came to Glasgow in 2014 has seen massive success. It was initially run by Nextbike, but was taken over by Voi Technology in 2025. This new scheme makes a minimum of 1000 e-bikes available 24/7 at over 100 locations in Glasgow, Glasgow City Council’s website states. The change to e-bikes reflect the city’s sustainability goals. The Walking and Cycling Index indicates that walking, wheeling and cycling saves 30000 tonnes of greenhouse gas emissions. 22% of Glaswegians want to drive less, but don’t know about transportation options. </p> 
-
-<p>Based in Glasgow, Sunny Cycles aims to make cycling accessible to people of all ages and levels of ability. They help anxious cyclists gain confidence on busy roads and junctions. 69-year-old Joe Dolan holds sessions with Sunny Cycles, and he believes cycling in Glasgow is ‘getting better.’ He says the success of Sunny Cycles was unexpected, and they want people to ‘keep coming and stay active.’ </p>
-
-<p>‘Once the Avenues have been completed, the city will be safer,’ he says. </p>
-
-<p>He says people think cycling is an unsafe way to commute because of ‘hostility’ shown to cyclists. ‘If you cycle often you become immune to it, but one incident could put you off for good,’ he says.  </p>
-
-<p>Cycling and walking play vital roles in Glasgow’s health and wellbeing. Positive changes in health help the city’s economy, as the level of active commute in Glasgow yields £565.1 million in annual economic benefit. </p>
-
-<p>If Glasgow wants cycling to rise again, it must build not only bike lanes, but also public confidence. Until then, walking remains the most accessible way to commute in the city.</p>
-
 </div>
 	
-</body>
-</html><!DOCTYPE html>
-<html>
-<head>
-<style>
-
-body {
-  background-color: #E6EEF5;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  padding: 40px;
-}
-
-.page-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: #2F3E4D;
-  padding: 40px;
-  box-sizing: border-box;
-}
-
-
-h1 {
-  font-size: 38px;
-  font-family: "Times New Roman", serif;
-  color: #FFFFFF;
-  margin: 0 0 15px 0;
-  text-align: center;
-}
-
-h2, h3 {
-  font-size: 18px;
-  color: #FFFFFF;
-  margin: 0 0 20px 0;
-}
-
-.subtitle {
-  text-align: center;
-  color: #D1DCE5;
-  margin: 10px 0 40px 0;
-  font-size: 22px;
-}
-
-	
-p {
-  color: #D1DCE5;
-  line-height: 1.6;
-}
-
-a:link {
-  color: #F0472D;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FF8364;
-  text-decoration: underline;
-}
-
-
-.articles-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.article {
-  background-color: #3B4B5C;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1 1 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-  margin: 10px;
-}
-
-/* --- Charts --- */
-.chart-container, .flourish-embed {
-  width: 100%;
-  max-width: 600px;
-  height: 0;
-  position: relative;
-  padding-bottom: 66.66%; /* 600x400 aspect ratio */
-  margin: 30px auto;
-}
-
-.chart-container iframe, .flourish-embed iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  border: none;
-  display: block;
-}
-</style>
-</head>
-
-<body>
-
-<div class="page-container">
-
-<h1>Local Glasgow News</h1>
-<p class="subtitle">What's going on in Glasgow?</p>
-
-<div class="articles-container">
-
-
-<div class="article">
-  <h2>How Sustainable is Glasgow 2026? An Evaluation of the Commonwealth Games’ Eco Goals</h2>
-  <p>Commonwealth Games Scotland has selected four of Glasgow’s most coveted venues ...</p>
-
-  <div class="chart-container">
-    <iframe src="https://uploads.knightlab.com/storymapjs/f2bf65f46be26721571985fac0ee607c/glasgow-sport-venues/index.html" frameborder="0"></iframe>
-  </div>
-
-  <p>Low Emission Zones (LEZ) have made an undeniable impact ...</p>
-
-  <div class="chart-container">
-    <iframe title="Carbon Emissions in Glasgow 2015-2021" src="https://datawrapper.dwcdn.net/qFfQD/1/" scrolling="no"></iframe>
-  </div>
-
-  <p>Renovations of Scotstoun Stadium may complicate Glasgow’s ecological ...</p>
-</div>
-
-
-<div class="article">
-  <h3>The Rise of Walking and Fall of Cycling in Glasgow</h3>
-  <p>The volume of cyclists is falling in Glasgow as the amount of walking rises ...</p>
-
-  <div class="flourish-embed" data-src="visualisation/28335550">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/28335550/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
-    </noscript>
-  </div>
-
-  <p>Despite the impacts of these initiatives, in 2025, 58% of people with disabilities ...</p>
-
-  <div class="flourish-embed" data-src="visualisation/28405772">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/28405772/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
-    </noscript>
-  </div>
-
-  <p>While people don’t always feel safe walking in the city ...</p>
-
-  <div class="flourish-embed" data-src="visualisation/28366273">
-    <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/28366273/thumbnail" width="100%" style="max-width:600px;" height="400" alt="visualization" />
-    </noscript>
-  </div>
-
-  <p>Cycling and walking play vital roles in Glasgow’s health and wellbeing ...</p>
-</div>
-
-</div> 
-</div>
-
 </body>
 </html>
-
 
 
 
