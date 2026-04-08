@@ -58,13 +58,16 @@ body {
 
 
 .chart-container {
-  max-width: 100%;   
-  margin: 40px auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 40px 0;  
 }
 
 .chart-container iframe {
   width: 100%;
-  height: 650px; 
+  height: auto;    
+  min-height: 400px; 
+  display: block;
 }
 	
 .articles-container {
@@ -90,8 +93,9 @@ gap: 40px;
 .flourish-embed {
   width: 100% !important;
   max-width: 100%;
-  margin: 20px 0;   
-  display: block;   
+  height: auto !important;       
+  margin: 40px 0 !important;     
+  display: block;
 }
 
 .page-container {
