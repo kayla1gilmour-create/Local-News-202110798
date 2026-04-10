@@ -12,15 +12,26 @@ body {
   padding: 0px;
 }
 
-  h1 {
-    font-size: 38px;
-	font-family: times new roman;
-    color: #FFFFFF;
-    padding: 0px;            
-    margin: 0; 
-	margin-bottom: 15px;
-	text-align: center;
-  }
+.masthead {
+  background: #12202c;
+  padding: 32px 40px 24px;
+  border-bottom: 3px solid #2e6da4;
+}
+.site-name {
+  font-size: 34px;
+  color: #e8eef3;
+  font-family: 'Times New Roman', serif;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+}
+.tagline {
+  font-size: 13px;
+  color: #7a99b0;
+  font-family: Arial, sans-serif;
+  border-top: 0.5px solid #2a3d4e;
+  padding-top: 10px;
+  margin-top: 10px;
+}
 
   h2 {
     font-size: 20px;
@@ -39,15 +50,6 @@ body {
     margin: 0;  
 	margin-bottom: 20px;
   }
-
-.subtitle {
-  text-align: center;
-  color: #D1DCE5;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-size: 22px;
-font-family: times new roman;
-}
 
 	p {
   color: #D1DCE5;
@@ -85,13 +87,14 @@ gap: 40px;
 }
 
 .article {
-  background-color: #3B4B5C;
-  padding: 20px;
-  border-radius: 8px;
-  width: 80%;            
-  max-width: 1000px;       
-  margin: 20px auto;       
-  box-sizing: border-box;
+  background-color: #253546;
+  padding: 28px 32px;
+  border-radius: 4px;  
+  border-top: 3px solid #2e6da4;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto 24px;
 }
 
 .flourish-embed {
@@ -108,6 +111,23 @@ gap: 40px;
 	background-color: #2F3E4D;
   	padding: 40px;
 }
+
+.nav {
+  background: #12202c;
+  padding: 0 40px;
+  display: flex;
+  border-bottom: 0.5px solid #2a3d4e;
+}
+.nav a {
+  font-size: 12px;
+  color: #8fb3cc;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  padding: 10px 14px 10px 0;
+  margin-right: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
 	
 </style>
 </head>
@@ -117,9 +137,13 @@ gap: 40px;
 
 <div class="page-container">
 	
-<h1>Local Glasgow News</h1>
-	
-<p class="subtitle">What's going on in Glasgow?</p>
+<div class="masthead">
+  <div class="masthead-top">
+    <div class="site-name">Local Glasgow News</div>
+    <div class="site-date">Friday, 10 April 2026</div>
+  </div>
+  <div class="tagline">What's going on in Glasgow?</div>
+</div>
 
 <div class="articles-container">
 <div class="article">
